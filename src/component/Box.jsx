@@ -5,7 +5,8 @@ import { Form } from "@material-ui/core";
 import SignInSide from "./SignIn";
 import SignUp from "./SignUp";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-class Box extends React.Component {
+import Dashboard from "./Dashboard/Dashboard.jsx";
+class tox extends React.Component {
   render() {
     return (
       <div>
@@ -13,6 +14,7 @@ class Box extends React.Component {
           <Switch>
             <Route path="/" exact component={() => <SignInSide />} />
             <Route path="/sign_up" exact component={() => <SignUp />} />
+            <Route path="/dashboard" exact component={() => <Dashboard />} />
           </Switch>
         </Router>
       </div>
