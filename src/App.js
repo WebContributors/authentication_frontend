@@ -1,10 +1,9 @@
-
+import Box from "./component/Box.jsx";
 function App() {
   return (
     <div>
-      hi
+      <Box />
     </div>
   );
 }
-
 export default App;
